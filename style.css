@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 :root{
     /*                Farben            */
@@ -28,6 +28,15 @@
 body{
     height: 100vh;
     background: var(--body-color)
+}
+body.dark{
+    --body-color:#18191A;
+    --navbar-color:#242526;
+    --primary-color:#3A3B3C;
+    --primary-color-light:#3A3B3C;
+    --toggle-color:#FFF;
+    --text-color: #CCC;
+
 }
 /*               Resuable CSS              */
 
@@ -62,9 +71,9 @@ body{
 
 .navbar  li{
     font-size: 35px;
-    margin-top: 15px;
-    
-
+    margin-top: 7.5px;
+    justify-content: space-around;
+    margin-left: 60%;
 }
 .navbar li text{
     color: var(--text-color);
@@ -97,35 +106,58 @@ img{
 .navbar .nav-text {
     font-size: 25px;
     height: 45px;
-    width: 100px;
+    width: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    
 }
 .navbar .nav-text1 {
     font-size: 25px;
     height: 45px;
-    width: 125px;
+    width: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     
 }
+.navbar .nav-text2 {
+    font-size: 25px;
+    height: 45px;
+    width: 113px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .navbar li a:hover{
     background: var(--primary-color);
 }
 .navbar li a:hover .text{
     color: var(--navbar-color);
 }
-
-
-
-
-
-
+.kleiner{
+    height: 65px;
+}
+.navlink{
+    width: 550px;
+    
+}
+.moon-sun{
+    color: var(--text-color);
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+    height: 35px;
+    width: 755px;
+    display: flex;
+    justify-content: flex-end
+}
+.mode i {
+    position: absolute;
+}
+.mode i.sun{
+    opacity: 0;
+}
 
 @media(max-width:450px){
     .name{
