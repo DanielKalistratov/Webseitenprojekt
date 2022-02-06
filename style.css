@@ -147,13 +147,17 @@ img{
     color: var(--text-color);
     margin-top: 7.5px;
     margin-bottom: 7.5px;
-    height: 35px;
-    width: 755px;
     display: flex;
-    justify-content: flex-end
+    height: 35px;
+    width: 35px;
+    justify-content: flex-end;
+    border:1px solid red;
+    
 }
 .mode i {
     position: absolute;
+    left: 700px;
+
 }
 .mode i.sun{
     opacity: 0;
