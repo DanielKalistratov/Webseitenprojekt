@@ -66,7 +66,6 @@ body.dark{
     display: flex;
     align-items: center;
     text-align: center;
-    
 }
 
 .navbar  li{
@@ -147,10 +146,8 @@ img{
     color: var(--text-color);
     margin-top: 7.5px;
     margin-bottom: 7.5px;
-    display: flex;
     height: 35px;
     width: 35px;
-    justify-content: flex-end;
     border:1px solid red;
     
 }
