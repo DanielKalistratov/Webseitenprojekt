@@ -19,7 +19,7 @@
 
     /*                  Transition           */
 
-    --tran-03: all 0.2s ease;
+    --tran-02: all 0.2s ease;
     --tran-03: all 0.3s ease;
     --tran-04: all 0.4s ease;
     --tran-05: all 0.5s ease;
@@ -27,7 +27,8 @@
 
 body{
     height: 100vh;
-    background: var(--body-color)
+    background: var(--body-color);
+    transition: var(--tran-03);
 }
 body.dark{
     --body-color:#18191A;
@@ -36,6 +37,7 @@ body.dark{
     --primary-color-light:#3A3B3C;
     --toggle-color:#FFF;
     --text-color: #CCC;
+    
 
 }
 /*               Resuable CSS              */
@@ -135,6 +137,9 @@ img{
 .navbar li a:hover .text{
     color: var(--navbar-color);
 }
+body.dark .navbar li a:hover .text{
+    color: var(--text-color);
+}
 .kleiner{
     height: 65px;
 }
@@ -152,24 +157,19 @@ img{
     position: absolute;
 }
 .mode i {
-    position: relative;
-    margin-right: 50px;
-    margin-bottom: 7.5px;
-    bottom: 6.5px;
+    position: absolute;
+    margin-right: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .mode i.sun{
     opacity: 0;
 }
-
-@media(max-width:450px){
-    .name{
-        font-size: 24px;
-        margin-left: 20%;
-        margin-top: 14.5px;
-        margin-bottom: 14.5px;
-    }
+body.dark .mode i.sun{
+    opacity: 1;
 }
-.header-text .name{
-    font-weight: 600;
+body.dark .mode i.moon{
+    opacity: 0;
 }
