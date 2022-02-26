@@ -148,13 +148,15 @@ img{
     margin-bottom: 7.5px;
     height: 35px;
     width: 35px;
-    border:1px solid red;
-    
+    margin-left: 1470px;
+    position: absolute;
 }
 .mode i {
-    position: absolute;
-    left: 700px;
-
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 7.5px;
+    bottom: 6.5px;
+    
 }
 .mode i.sun{
     opacity: 0;
