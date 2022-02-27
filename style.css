@@ -53,7 +53,6 @@ body.dark {
 
 
 /*                 Navbar                  */
-
 .navbar {
     height: 65px;
     width: 100%;
@@ -65,18 +64,20 @@ body.dark {
 .navbar li {
     position: absolute;
     height: 50px;
-    margin-left: 50%;
     list-style: none;
     display: flex;
     align-items: center;
     text-align: center;
 }
-
+@media(min-width:1005px){
+    .navbar li {
+        margin-left: 55%;
+    }
+}
 .navbar li {
-    font-size: 35px;
+    font-size: 219%;
     margin-top: 7.5px;
     justify-content: space-around;
-    margin-left: 60%;
 }
 
 .navbar li text {
@@ -87,7 +88,7 @@ body.dark {
 img {
     width: 55px;
     margin-top: 3.15835px;
-    margin-left: 0.2%;
+    margin-left: 0.7%;
 }
 
 .navbar header .image text {
@@ -96,7 +97,7 @@ img {
 
 .name {
     position: absolute;
-    margin-left: 22%;
+    margin-left: 19%;
     margin-top: 9.5px;
     margin-bottom: 9.5px;
     color: var(--text-color);
@@ -122,7 +123,7 @@ img {
 .navbar .nav-text1 {
     font-size: 25px;
     height: 45px;
-    width: 140px;
+    width: 135px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,6 +137,7 @@ img {
     align-items: center;
     justify-content: center;
 }
+
 
 .navbar li a:hover {
     background: var(--primary-color);
@@ -154,7 +156,7 @@ body.dark .navbar li a:hover .text {
 }
 
 .navlink {
-    width: 550px;
+    width: 28%;
 }
 
 .moon-sun {
@@ -163,13 +165,13 @@ body.dark .navbar li a:hover .text {
     margin-bottom: 7.5px;
     height: 35px;
     width: 35px;
-    margin-left: 1470px;
-    position: absolute;
+    margin-left: 86%;
+    position:fixed;
+
 }
 
 .mode i {
     position: absolute;
-    margin-right: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,4 +203,10 @@ body.dark .mode i.moon {
     height: 100%;
     margin-left: 20%;
     margin-right: 20%;
+}
+
+@media (min-width:1004){
+    .navbar li {
+        margin-left: 90%;
+    }
 }
