@@ -63,7 +63,6 @@ body.dark {
 
 .navbar li {
     position: absolute;
-    height: 50px;
     list-style: none;
     display: flex;
     align-items: center;
@@ -72,7 +71,30 @@ body.dark {
 @media(min-width:1005px){
     .navbar li {
         margin-left: 55%;
+        height: 50px;
     }
+    .moon-sun:hover{
+        animation: shake 1s ease-in;
+    }
+    @keyframes shake{
+        0%{
+            transform: translate(0);
+        }
+        20%,40%,60%,80%{
+            transform: translate(10.5px);
+        }
+        10%,30%,50%{
+            transform: translate(-2.5px);
+        } 
+        70%,100%{
+            transform: translate(0);
+        }
+    
+    }
+    .navlink {
+        width: 28%;
+    }
+
 }
 .navbar li {
     font-size: 219%;
@@ -154,10 +176,10 @@ body.dark .navbar li a:hover .text {
 .kleiner {
     height: 65px;
 }
-
-.navlink {
-    width: 28%;
+.image{
+    width: 59px;
 }
+
 
 .moon-sun {
     color: var(--text-color);
@@ -176,6 +198,7 @@ body.dark .navbar li a:hover .text {
     align-items: center;
     justify-content: center;
     transition: var(--tran-03);
+    color: var(--text-color);
 }
 
 .mode i.sun {
@@ -190,23 +213,15 @@ body.dark .mode i.moon {
     opacity: 0;
 }
 
-.home {
-    position: relative;
-    top: 65px;
-}
 
-.home .text {
-    font-size: 30px;
-    font-weight: 500;
-    color: var(--text-color);
-    width: 60%;
-    height: 100%;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-@media (min-width:1004){
+@media screen and (max-width:1004px){
     .navbar li {
-        margin-left: 90%;
+        margin-left: 30%;
+        top: 89%;
+        background-color: var(--navbar-color);
+    }
+    .navlink{
+        width: 70%;
+        height: 1570%;
     }
 }
