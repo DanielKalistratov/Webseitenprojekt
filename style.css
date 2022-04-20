@@ -226,6 +226,7 @@ body.dark .mode i.moon {
         flex-direction: column;
         justify-content:space-around;
         margin-left: 15%;
+        margin-top: 2%;
     }
     .navbar li a {
         text-decoration: none;
@@ -236,13 +237,12 @@ body.dark .mode i.moon {
         background-color: var(--navbar-color);
         position:fixed;
         margin-left: 30%;
-        margin-top: 18%;
+        margin-top: 14%;
         
     }
     .moon-sun{
-        margin-left: 0%;
-        margin-top: 160%;
-        margin-left: 30.16%;
+        margin-left: 31.5%;
+        margin-top: 170%;
     }
 
 }
