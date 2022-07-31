@@ -158,7 +158,7 @@ body.dark .navbar li a:hover .text {
 img {
     width: 55px;
     margin-top: 3.15835px;
-    margin-left: 0.7%;
+    margin-left: 10%;
 }
 
 .navbar header .image text {
@@ -238,7 +238,16 @@ body.dark .mode i.moon {
         position:fixed;
         margin-left: 30%;
         margin-top: 14%;
-        
+    }
+    img{
+        width: 85%;
+        margin-top: 9.74%;
+    }
+    .name {
+        position: absolute;
+        margin-left: 16%;
+        margin-top: 9.5px;
+        color: var(--text-color);
     }
     .moon-sun{
         margin-left: 31.5%;
