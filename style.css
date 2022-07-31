@@ -129,6 +129,14 @@ body.dark {
     align-items: center;
     justify-content: center;
 }
+.navbar .nav-text3 {
+    font-size: 25px;
+    height: 45px;
+    width: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .navbar li a:hover {
     background: var(--primary-color);
 }
