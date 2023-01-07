@@ -234,6 +234,7 @@ body.dark .mode i.moon {
         clip-path: circle(50px at 90% -10%);
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 0.5s ease-out;
+        
     }
     .menu-links.open{
         clip-path: circle(1000px at 90% -10%);
