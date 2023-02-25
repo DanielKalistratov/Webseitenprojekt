@@ -5,3 +5,60 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    /*                Farben            */
+    --body-color: #E4E9F7;
+    --navbar-color: #FFF;
+    --primary-color: #695CFE;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDDD;
+    --text-color: #6e6e6e;
+    /*                  Transition           */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+}
+
+body {
+    background: var(--body-color);
+    transition: var(--tran-03);
+    height: 100vh;
+}
+
+body.dark {
+    --body-color: #18191A;
+    --navbar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #FFF;
+    --text-color: #CCC;
+}
+
+
+/*               Resuable CSS              */
+
+.navbar .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar .image {
+    align-items: center;
+}
+
+/*                 Navbar                  */
+.navbar {
+    height: 65px;
+    width: 100%;
+    background: var(--navbar-color);
+    z-index: 100;
+}
+.navbar li {
+    position: absolute;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
